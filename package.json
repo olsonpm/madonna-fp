@@ -1,0 +1,22 @@
+{
+  "name": "madonna-fp",
+  "version": "0.1.0",
+  "description": "A functional approach to javascript object validation",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "author": "phil olson",
+  "license": "ISC",
+  "dependencies": {
+    "deep-freeze-strict": "^1.1.1",
+    "lodash": "^4.8.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
