@@ -51,3 +51,4 @@
 - Is there such thing as a generic friendly error message?  Maybe this library
   should provide one but also allow for customization on a per error (or
   argument) basis?
+- When object isn't passed, give the expected properties to the object

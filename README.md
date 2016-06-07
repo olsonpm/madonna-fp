@@ -198,7 +198,7 @@ res = validateCar({
 
 ##### A complex case using the passTo and passEachTo criterion
  - Note passTo and passEachTo require named validators, which are configured via
-   [opts.name](#opts).  Note either createValidator or createSternValidator can
+   [opts.name](#opts).  Either createValidator or createSternValidator can
    be used.
  - We declare three validators: 'validateGame', 'vModifiedDeck', and 'vCard'
  - 'validateGame' is made up of two properties: 'numberOfDice' and 'modifiedDeck'
