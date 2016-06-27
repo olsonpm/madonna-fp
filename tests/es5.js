@@ -57,16 +57,14 @@ module.exports =
 	var chai = __webpack_require__(/*! chai */ 1),
 	    fp = __webpack_require__(/*! lodash/fp */ 2),
 	    errorInfo = __webpack_require__(/*! ../lib/error-info */ 3),
-	    minimist = __webpack_require__(/*! minimist */ 5),
 	    utils = __webpack_require__(/*! ../lib/utils */ 4),
-	    validFlags = __webpack_require__(/*! ../lib/valid-flags */ 6);
+	    validFlags = __webpack_require__(/*! ../lib/valid-flags */ 5);
 
 	//------//
 	// Init //
 	//------//
 
-	var argv = minimist(process.argv.slice(2));
-	var madonna = argv.es5 ? __webpack_require__(/*! ../es5 */ 7) : __webpack_require__(/*! ../es6 */ 8);
+	var madonna = __webpack_require__(/*! ../es6 */ 6);
 
 	chai.should();
 
@@ -719,15 +717,6 @@ module.exports =
 
 /***/ },
 /* 5 */
-/*!***************************!*\
-  !*** external "minimist" ***!
-  \***************************/
-/***/ function(module, exports) {
-
-	module.exports = require("minimist");
-
-/***/ },
-/* 6 */
 /*!****************************!*\
   !*** ./lib/valid-flags.js ***!
   \****************************/
@@ -808,22 +797,13 @@ module.exports =
 	};
 
 /***/ },
-/* 7 */
+/* 6 */
 /*!*************************!*\
   !*** external "../es5" ***!
   \*************************/
 /***/ function(module, exports) {
 
 	module.exports = require("../es5");
-
-/***/ },
-/* 8 */
-/*!*************************!*\
-  !*** external "../es6" ***!
-  \*************************/
-/***/ function(module, exports) {
-
-	module.exports = require("../es6");
 
 /***/ }
 /******/ ]);

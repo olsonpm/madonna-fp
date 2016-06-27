@@ -52,7 +52,7 @@ var res = [
   }, {
     entry: './tests/es6.js'
     , target: 'node'
-    , externals: [nodeExternals(), '../es5', '../es6']
+    , externals: [nodeExternals(), { '../es6': '../es5' }]
     , output: {
       path: path.join(__dirname, 'tests')
       , filename: 'es5.js'
