@@ -6,7 +6,7 @@ A functional approach to javascript object validation
 
 **Tested against**
  - node 0.10.0 for the (default) es5 version
- - node 4.0.0 for es6 @ `require('madonna-fp/es6')`
+ - node 6.0.0 for es6 @ `require('madonna-fp/es6')`
 
 ## Table of Contents
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

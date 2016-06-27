@@ -763,11 +763,11 @@ module.exports =
 	//    the schema may declare optional arguments exclusively
 	//
 	function getValidatorFn() {
-	  return function (arg, shouldThrow) {
+	  return function (_ref, shouldThrow) {
+	    var schema = _ref.schema;
+	    var _ref$opts = _ref.opts;
+	    var opts = _ref$opts === undefined ? {} : _ref$opts;
 	    return function (unsafeArgsObj) {
-	      var schema = arg.schema,
-	          opts = arg.opts;
-
 	      var res = {
 	        isValid: false
 	      };
