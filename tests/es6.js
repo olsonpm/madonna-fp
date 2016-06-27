@@ -6,9 +6,9 @@
 //---------//
 
 const chai = require('chai')
-  , madonna = require('../lib')
   , fp = require('lodash/fp')
   , errorInfo = require('../lib/error-info')
+  , minimist = require('minimist')
   , utils = require('../lib/utils')
   , validFlags = require('../lib/valid-flags');
 
@@ -16,6 +16,11 @@ const chai = require('chai')
 //------//
 // Init //
 //------//
+
+var argv = minimist(process.argv.slice(2));
+const madonna = (argv.es5)
+  ? require('../es5')
+  : require('../es6');
 
 chai.should();
 
