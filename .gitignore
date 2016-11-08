@@ -1,2 +1,4 @@
 /node_modules
 /test.js
+/es5.js
+/tests/es5.js
